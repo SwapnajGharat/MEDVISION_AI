@@ -6,7 +6,7 @@ class MultimodalFusionNet(nn.Module):
     def __init__(self, tabular_dim):
         super(MultimodalFusionNet, self).__init__()
         
-        # 1. Vision Branch: EfficientNetV2 
+        # 1. Vision Branch: EfficientNetV2
         # It converts an image into a vector of 1280 numbers
         self.vision_model = models.efficientnet_v2_s(weights='DEFAULT')
         self.vision_model.classifier = nn.Identity() 

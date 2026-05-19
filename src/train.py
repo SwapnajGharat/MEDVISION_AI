@@ -18,7 +18,7 @@ def train_model():
     # 3. Initialize Model
     model = MultimodalFusionNet(tabular_dim=3).to(device)
     
-    # 4. Loss Function & Optimizer
+    # 4. Loss Function & Optimizer 
     criterion = nn.BCELoss() # Binary Cross Entropy for 0/1 classification
     optimizer = optim.Adam(model.parameters(), lr=1e-4)
 

@@ -22,7 +22,7 @@ class MedicalDataset(Dataset):
         # Scale image to 0-1 and convert to Tensor
         image = torch.tensor(image).permute(2, 0, 1).float() / 255.0
         
-        # Clinical features
+        # Clinical feature
         clinical = self.data.iloc[idx][['age', 'glucose', 'blood_pressure']].values.astype(np.float32)
         
         # Label

@@ -6,7 +6,7 @@ from src.models import MultimodalFusionNet
 from PIL import Image
 import matplotlib.pyplot as plt
 
-# 1. DARK MEDICAL THEME 
+# 1. DARK MEDICAL THEME
 st.set_page_config(page_title="MedVision AI | Dark Mode", layout="wide")
 
 st.markdown("""
